@@ -29,27 +29,21 @@ const Footer = () => {
             className="footerSocialLink"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <i className="bx bxl-facebook"></i>
-          </a>
+          ></a>
 
           <a
             href="https://github.com/emersonpalacio"
             className="footerSocialLink"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <i className="bx bxl-github"></i>
-          </a>
+          ></a>
 
           <a
             href="https://www.linkedin.com/in/emerson-palacio-otalvaro/"
             className="footerSocialLink"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <i className="bx bxl-linkedin"></i>
-          </a>
+          ></a>
         </div>
         <span className="footerCopy">
           &#169;Crypticalcoder. All rights reserved

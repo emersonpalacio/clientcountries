@@ -42,7 +42,6 @@ const Contact = () => {
           <h3 className="contactTitle">Talk to my</h3>
           <div className="contactInfo">
             <div className="contactCard">
-              <i className="bx bx-mail-send contactCardIcon"></i>
               <h3 className="contactCardTitle">Email</h3>
               <span className="contactCardData">
                 emersonpalaciootalvaro@gmail.com
@@ -50,18 +49,15 @@ const Contact = () => {
 
               <a href="#contact" className="contactButton">
                 Write my{" "}
-                <i className="bx bx-right-arrow-alt ContactButtonIcon"></i>
               </a>
             </div>
 
             <div className="contactCard">
-              <i className="bx bxl-whatsapp contactCardIcon"></i>
               <h3 className="contactCardTitle">Whatsapp</h3>
               <span className="contactCardData">302-4299-5963</span>
 
               <a href="https://whatsapp.com/dl/" className="contactButton">
                 Write my
-                <i className="bx bx-right-arrow-alt ContactButtonIcon"></i>
               </a>
             </div>
 

@@ -7,21 +7,18 @@ const Backend = () => {
       <div className="skillsBox">
         <div className="skillsGroup">
           <div className="skillsData">
-            <i className="uil uil-check-circle "></i>
             <div>
               <h3 className="skillName">Node js</h3>
               <span className="skillLevel">Advanced</span>
             </div>
           </div>
           <div className="skillsData">
-            <i className="uil uil-check-circle "></i>
             <div>
               <h3 className="skillName">.Net Core</h3>
               <span className="skillLevel">Advanced</span>
             </div>
           </div>
           <div className="skillsData">
-            <i className="uil uil-check-circle "></i>
             <div>
               <h3 className="skillName">DB</h3>
               <span className="skillLevel">SQL-ServerDB ➤ Pgrest</span>
