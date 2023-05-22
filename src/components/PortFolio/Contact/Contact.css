@@ -1,0 +1,154 @@
+.contact {
+  width: 100%;
+}
+.contactContainer {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  column-gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+.contactTitle {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.contactInfo {
+  font-display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 300px;
+}
+
+.contactCard {
+  background-color: #23394d;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+.contactCardIcon {
+  font-size: 2rem;
+  color: antiquewhite;
+  margin-bottom: 0.5rem;
+}
+
+.contactCardTitle,
+.contactCardData {
+  font-size: 0.875rem;
+}
+.contactCardTitle {
+  font-weight: 500;
+}
+
+.contactCardData {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.contactButton {
+  color: antiquewhite;
+}
+
+.contactButton {
+  color: #bb728f;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+}
+
+.contactButton:hover .ContactButtonIcon {
+  transform: translate(0.8rem);
+}
+.ContactButtonIcon {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.comtactFrom {
+  width: 360px;
+}
+
+.contactFormDiv {
+  position: relative;
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+.contactFormInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  /* background-color: ; */
+  color: black;
+  outline: none;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  height: 90px;
+  z-index: 1;
+}
+.contactFormTetxArea {
+  overflow-y: hidden;
+}
+
+.contactFormTag {
+  position: absolute;
+  top: -0.75;
+  left: 1.25rem;
+  font-size: 0.813rem;
+  padding: 0rem;
+  /* background-color: red; */
+  z-index: 10;
+}
+
+.contactFormArea {
+  height: 4rem;
+}
+
+.contactFormArea textarea {
+  resize: none;
+}
+
+.sectionTtitle {
+  color: #bb728f;
+  font-size: 2.25rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contactContainer {
+    column-gap: 3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  .contactInfo {
+    justify-content: center;
+  }
+  .comtactForm {
+    margin: 0 auto;
+  }
+  .ButtonFlex {
+    width: 100%;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactInfo {
+    grid-template-columns: 1fr;
+  }
+  .comtactForm {
+    width: 100%;
+  }
+  .ButtonFlex {
+    width: 100%;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 350px) {
+}

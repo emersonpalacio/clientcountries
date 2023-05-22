@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  margin: 10px;
+}
+
+.containerChild h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 10px;
+  color: aliceblue;
+
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.containerChild select {
+  margin-left: 10px;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  background-color: #777;
+}
+
+select:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+select option:first-of-type {
+  color: #ccc;
+}
+
+.botonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.boton {
+  display: flex;
+  padding: 4px 10px;
+}
+
+button {
+  transition: all 300ms ease-in-out;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.botonReload {
+  background-color: #4caf50; /* color de fondo */
+  background-color: #777;
+  border: none; /* borde sin estilo */
+  color: white; /* color del texto */
+  padding: 15px 32px; /* espacio alrededor del texto */
+  text-align: center; /* centrar el texto */
+  text-decoration: none; /* sin subrayado */
+  display: inline-block; /* mostrar como un elemento en línea */
+  font-size: 16px; /* tamaño de la fuente */
+  margin: 4px 2px; /* margen */
+  cursor: pointer; /* cursor de la mano */
+  border-radius: 25px; /* radio del borde */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+  transition-duration: 0.4s; /* duración de la transición */
+}
+
+.botonReload:hover {
+  background-color: #3e8e41; /* color de fondo al pasar el ratón */
+  background-color: #23394d;
+}
+
+button:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transform: translateX(-0.2px);
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #fff;
+
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin-left: 10px;
+    padding-top: 1%;
+    margin: 5px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 10px 30px; */
+  }
+
+  select {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .containerChild h3 {
+    font-size: 25px;
+  }
+
+  .container label {
+    font-size: 16px;
+  }
+
+  button {
+    width: 80px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .boton {
+    padding: 4px 6px;
+    text-align: center;
+  }
+  .botonContainer {
+    padding-top: 45%;
+  }
+  .botonReload {
+    background-color: #4caf50; /* color de fondo */
+    background-color: #777;
+    border: none; /* borde sin estilo */
+    color: white; /* color del texto */
+    padding: 15px 32px; /* espacio alrededor del texto */
+    text-align: center; /* centrar el texto */
+    text-decoration: none; /* sin subrayado */
+    display: inline-block; /* mostrar como un elemento en línea */
+    font-size: 12px; /* tamaño de la fuente */
+    margin: 4px 2px; /* margen */
+    cursor: pointer; /* cursor de la mano */
+    border-radius: 25px; /* radio del borde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+    transition-duration: 0.4s; /* duración de la transición */
+  }
+
+  .botonReload:hover {
+    background-color: #3e8e41; /* color de fondo al pasar el ratón */
+  }
+}

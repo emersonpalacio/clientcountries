@@ -1,0 +1,54 @@
+.backGround {
+  background-image: url("./image/uno.jpg");
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+
+.pokeBola {
+  width: 40px;
+  height: 40px;
+}
+
+.backGround a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  transition: 300ms;
+}
+
+.backGround a:hover {
+  letter-spacing: 4px;
+}
+
+.link {
+  display: flex;
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #64b2ff;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .backGround {
+    background-image: url("./image/uno.jpg");
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-size: 210% 100%;
+  }
+}

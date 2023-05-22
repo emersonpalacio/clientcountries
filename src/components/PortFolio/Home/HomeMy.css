@@ -1,0 +1,230 @@
+/* //////////////////// */
+/* #23394d; */
+/* #bb728f; */
+.homeContent {
+  grid-template-columns: 116px repeat(2, 1fr);
+  padding-top: 5.5rem;
+  column-gap: 2rem;
+  align-items: center;
+  padding: 0px;
+}
+
+.homeSocial {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.homeSocialIcon {
+  font-size: 1, 25rem;
+  color: #bb728f;
+}
+
+.homeSocialIcon:hover {
+  color: #bb728f;
+}
+
+.homeTitle {
+  font-size: 2.25rem;
+  margin-bottom: 0.25rem;
+  color: #bb728f;
+}
+
+.homeHand {
+  width: 28px;
+  height: 28px;
+  margin-left: 0.4rem;
+}
+
+.homeSubTitle {
+  position: relative;
+  font-size: 1.25rem;
+  padding-left: 5.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.homeSubTitle::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: white;
+  left: 0;
+  top: 1rem;
+}
+
+.homeDesctiption {
+  max-width: 400px;
+  margin-bottom: 3rem;
+}
+
+.home .homeImg {
+  background: url(../assets/emreson.jpeg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  order: 1;
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+  animation: profileAnimate 8s ease-in-out infinite 1s;
+}
+.homeImg:hover {
+  cursor: pointer;
+}
+
+@keyframes profileAnimate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.homeScroll {
+  margin-left: 9.25rem;
+}
+
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(3.75rem);
+  }
+}
+
+.homeScrollName {
+  /* color: var(--title-color); */
+  font-weight: 500;
+  margin-right: 0.25rem;
+  margin-left: 2px;
+  color: #bb728f;
+}
+
+.homeScrollArrow {
+  font-size: 1.25rem;
+  color: azure;
+}
+
+/* color iconos */
+
+/* i.uil-arrow-down {
+  color: azure;
+} */
+i.uil-linkedin-alt {
+  color: azure;
+}
+
+i.uil-github {
+  color: azure;
+}
+.button__icon {
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  color: aliceblue;
+  background-color: #bb728f;
+
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+/* ============= BREAKPOINT =============== */
+
+@media screen and (max-width: 992px) {
+  .homeContent {
+    grid-template-columns: 100px repeat(2, 1fr);
+    place-items: center;
+    column-gap: 1.25rem;
+  }
+
+  .homeHand {
+    width: 26px;
+    height: 26px;
+  }
+
+  .homeSubTitle {
+    padding-left: 3.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .homeSubTitle::before {
+    width: 42px;
+    top: 0.8rem;
+  }
+  .homeDesctiption {
+    max-width: initial;
+    margin-bottom: 0.25rem;
+  }
+  .homeImg {
+    width: 50px;
+    height: 50px;
+    box-shadow: inset 0 0 0 7px rgb(255 255 255 / 30%);
+  }
+
+  .homeScroll {
+    margin-left: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeContent {
+    grid-template-columns: 0.5fr 3fr;
+    padding: 3.5rem;
+  }
+  .homeImg {
+    order: inherit;
+    justify-self: inherit;
+  }
+
+  .homeData {
+    grid-column: 1/3;
+  }
+
+  .homeImg {
+    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+  }
+
+  .homeScroll {
+    display: none;
+  }
+  .homeSocial {
+    /* display: none; */
+    display: grid;
+    grid-template-columns: 912fr 4fr;
+    row-gap: 1rem;
+  }
+}
+/* @media screen and (max-width: 576px) {
+  .homeContent{
+    
+  }
+} */
+@media screen and (max-width: 350px) {
+  .homeImg {
+    width: 180px;
+    height: 180px;
+  }
+  .homeHand {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,69 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+
+  margin: 0;
+}
+
+.list li {
+  margin: 0 8px;
+  margin: 0 0.25rem;
+}
+
+.list button {
+  padding: 0 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #bb728f;
+
+  border: none;
+
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  background-color: #777;
+  border: none; /* borde sin estilo */
+  color: white; /* color del texto */
+  padding: 15px 32px; /* espacio alrededor del texto */
+  text-align: center; /* centrar el texto */
+  text-decoration: none; /* sin subrayado */
+  display: inline-block; /* mostrar como un elemento en línea */
+
+  margin: 4px 2px; /* margen */
+  cursor: pointer; /* cursor de la mano */
+  border-radius: 25px; /* radio del borde */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+  transition-duration: 0.4s; /* duración de la transición */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+button:hover,
+button.active {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .list button {
+    width: 30px;
+  }
+}
